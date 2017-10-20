@@ -18,6 +18,9 @@
         <activity android:name=".MainActivity">
 
         </activity>
+        <activity android:name=".Home_activity">
+
+        </activity>
     </application>
 
 </manifest>

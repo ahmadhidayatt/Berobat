@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         view = (WebView) this.findViewById(R.id.webView);
         view.getSettings().setJavaScriptEnabled(true);
         view.setWebViewClient(new MyBrowser());
-        view.loadUrl("http://berobat.id/#Login");
+        view.loadUrl("http://berobat.co.id/#Login");
     }
 
     private class MyBrowser extends WebViewClient {
