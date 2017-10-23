@@ -27,27 +27,30 @@ public class Home_activity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                move();
+                move("home");
             }
         });
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                move();
+                move("login");
             }
         });
         regist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                move();
+                move("register");
             }
         });
 
 
     }
 
-   public void move (){
+   public void move (String type){
        Intent mainIntent = new Intent(Home_activity.this,MainActivity.class);
+       Bundle extras = new Bundle();
+       extras.putString("type", type);
+       mainIntent.putExtras(extras);
        Home_activity.this.startActivity(mainIntent);
        Home_activity.this.finish();
     }
