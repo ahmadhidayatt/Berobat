@@ -46,7 +46,10 @@ public class Splash_activity extends AppCompatActivity
             @Override
             public void run() {
                 /* Create an Intent that will start the Menu-Activity. */
-                Intent mainIntent = new Intent(Splash_activity.this,Home_activity.class);
+                Intent mainIntent = new Intent(Splash_activity.this,MainActivity.class);
+                Bundle extras = new Bundle();
+                extras.putString("type", "0");
+                mainIntent.putExtras(extras);
                 Splash_activity.this.startActivity(mainIntent);
                 Splash_activity.this.finish();
             }
