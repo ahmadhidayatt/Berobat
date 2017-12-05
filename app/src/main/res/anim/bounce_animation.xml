@@ -19,6 +19,6 @@
         android:repeatMode="reverse"
         android:interpolator="@android:interpolator/bounce"
         android:valueFrom="-1300"
-        android:valueTo="-650"
+        android:valueTo="0"
         android:valueType="floatType"/>
 </set>

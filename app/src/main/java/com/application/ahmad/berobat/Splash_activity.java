@@ -2,6 +2,7 @@ package com.application.ahmad.berobat;
 
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -30,7 +31,7 @@ public class Splash_activity extends AppCompatActivity
 
         mLogo = findViewById(R.id.logo);
 
-        AnimatorSet logoAnimatorSet =
+        @SuppressLint("ResourceType") AnimatorSet logoAnimatorSet =
                 (AnimatorSet) AnimatorInflater.loadAnimator(getApplicationContext(), R.anim.bounce_animation);
         // 4
         logoAnimatorSet.setTarget(mLogo);

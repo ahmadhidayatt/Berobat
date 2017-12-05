@@ -46,39 +46,39 @@ public class MainActivity extends AppCompatActivity {
         view.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
         view.getSettings().setUserAgentString("Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en)AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3");
         view.setWebChromeClient(new WebChromeClient());
-        view.setWebViewClient(new WebViewClient() {
-            @Override
-            public void onPageFinished(final WebView view, String url) {
-                super.onPageFinished(view, url);
-                Log.d("aaaaaaaaaaaaaaaaaaaa", type);
-                if (type.equals("login")) {
-                    view.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            view.loadUrl("javascript:(function(){document.getElementById('iframe-login').click();})()");
-                         }
-                    });
-
-
-                } else if (type.equals("register")) {
-                    view.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            view.loadUrl("javascript:(function(){document.getElementById('iframe-register').click();})()");
-                        }
-                    });
-
-                } else {
-                    view.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            view.loadUrl("http://berobat.co.id/");
-                        }
-                    });
-
-                }
-            }
-        });
+//        view.setWebViewClient(new WebViewClient() {
+//            @Override
+//            public void onPageFinished(final WebView view, String url) {
+//                super.onPageFinished(view, url);
+//                Log.d("aaaaaaaaaaaaaaaaaaaa", type);
+//                  view.post(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            view.loadUrl("javascript:(function(){document.getElementById('iframe-login').click();})()");
+//                         }
+//                    });
+//
+//                    if (type.equals("login")) {
+//
+//                    } else if (type.equals("register")) {
+//                    view.post(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            view.loadUrl("javascript:(function(){document.getElementById('iframe-register').click();})()");
+//                        }
+//                    });
+//
+//                } else {
+//                    view.post(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            view.loadUrl("http://berobat.co.id/");
+//                        }
+//                    });
+//
+//                }
+//            }
+//        });
 
         view.loadUrl("http://berobat.co.id/");
 

@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Berobat.iml" filepath="$PROJECT_DIR$/Berobat.iml" />
-      <module fileurl="file://C:\Users\Vaio\AndroidStudioProjects\Berobat\Berobat.iml" filepath="C:\Users\Vaio\AndroidStudioProjects\Berobat\Berobat.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\Vaio\AndroidStudioProjects\Berobat\app\app.iml" filepath="C:\Users\Vaio\AndroidStudioProjects\Berobat\app\app.iml" />
     </modules>
   </component>
 </project>
